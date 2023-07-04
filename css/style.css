@@ -1,0 +1,111 @@
+body
+{
+    background-color: bisque;
+}
+
+
+
+h1
+{
+    color:blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a
+{
+    text-shadow: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    font-size: 16pt;
+}
+
+a:hover
+{
+    color:goldenrod;
+    font-size: 30pt;
+}
+
+.header
+{
+    width: 100%;
+    background-color: paleturquoise;
+    height: 150px;
+    padding-bottom: 30px;
+}
+
+.slider
+{
+    width: 100%;
+    background-color: pink;
+    padding-bottom: 480px;
+}
+
+.box1
+{
+    width: 25%;
+    background-color: lightsalmon;
+    padding-bottom: 200px;
+    float: right;
+}
+
+.box2
+{
+    width: 25%;
+    background-color: lightcoral;
+    padding-bottom: 200px;
+    float: right;
+}
+
+.box3
+{
+    width: 25%;
+    background-color: lightsalmon;
+    padding-bottom: 200px;
+    float: right;
+}
+
+.box4
+{
+    width: 25%;
+    background-color: lightcoral;
+    padding-bottom: 200px;
+    float: right;
+}
+
+.content
+{ 
+    text-align: justify;
+    font-family:'Dancing Script', cursive;
+}
+
+table, tr, td, th
+{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+td
+{
+    padding: 5px;
+}
+
+tr
+{
+    background-color: mintcream;
+}
+
+tr:nth-child(odd)
+{
+    background-color: pink;
+}
+
+th
+{
+    background-color: black;
+    color: aquamarine;
+}
+
+tr:hover
+{
+    background-color: darkorchid;
+}
