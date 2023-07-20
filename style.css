@@ -1,0 +1,474 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Montserrat Medium'; /* Choose a name for your custom font */
+  src: url('Montserrat-Medium.ttf') format('truetype'); /* Replace 'path-to-font' with the actual path to your font file */
+}
+@font-face {
+  font-family: 'Montserrat Bold'; /* Choose a name for your custom font */
+  src: url('Montserrat-Bold.ttf') format('truetype'); /* Replace 'path-to-font' with the actual path to your font file */
+}
+
+body {
+  margin: 0px;
+  font-family: 'Montserrat Medium', Arial, sans-serif;
+  background-color: #FFF8DC;
+
+}
+
+
+header {
+  background-color: #333;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+.typeofwau {
+  font-family: 'Montserrat Medium', Arial, sans-serif;
+  margin: 0px;
+  background-color: #FFF8DC;
+}
+
+.navbar {
+  background-color: #69472f;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style for the navigation bar links */
+.navbar a {
+  color: pink;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Change the color of the navigation bar links on hover */
+.navbar a:hover {
+  background-color: #D2B48C;
+  color: #69472f;
+}
+
+
+
+.rounded-button {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background-color: #69472f;
+  color: #FFF8DC;
+  padding: 15px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.button-link {
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.rounded-button:hover {
+  color: #69472f;
+  background-color: #D2B48C;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.one {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.column.one.text {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Add margin below the text */
+}
+
+.column.one.img {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Middle column */
+.column.two {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column.two.text {
+  width: 50%;
+  font-size: 17px;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.column.two.img {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column.three.text {
+  width: 50%;
+  font-size: 17px;
+  margin-left: -20px;
+  margin-top: 110px;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column.four.text {
+  width: 50%;
+  font-size: 17px;
+  margin-top: 70px;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column.three.img {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column.three img {
+  max-width: 500px;
+  height: auto;
+  margin: 10px;
+  margin-right: 100px;
+}
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  clear: both;
+  margin-bottom: 20px; /* Add space between content blocks */
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+p {
+  color: #69472f;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+  color: #555;
+  margin-left: -40px;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Add space between containers */
+  background-color: #FFF8DC;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  overflow: auto;
+}
+.container img {
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container:hover {
+  background-color: #DEB887;
+}
+
+.text-container {
+  margin-left: 20px; /* Add spacing between image and text */
+  flex: 1;
+}
+
+.text-container h2,
+.text-container p {
+  text-align: left;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+img {
+  max-width: 500px;
+  height: 500px;
+  margin-top: -20px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.column.two img {
+  max-width: 800px;
+  height: auto;
+  margin: 10px;
+  margin-right: 100px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.column.one img {
+  max-width: 500px;
+  height: auto;
+  margin: 10px;
+  margin-right: 100px;
+}
+
+
+/* rules and gameplays style*/
+
+
+.page1 {
+  font-family: "Montserrat Medium";
+  padding-left: 240px;
+  color: #69472f;
+}
+
+.tournament {
+  width: 480px;
+  height: 600px;
+  position: absolute;
+          top: 480px;
+          left: 1100px;
+          max-width: 35%;
+  max-height:35%;
+  float: right;
+}
+
+.tournament1 {
+  width: 230px;
+  height: 160px;
+  position: absolute;
+          top: 280px;
+          left: 1350px;
+          max-width: 35%;
+  max-height:35%;
+  float: right;
+}
+
+.rngimg {
+  width: 230px;
+  height: 160px;
+  position: absolute;
+          top: 280px;
+          left: 1100px;
+          max-width: 35%;
+  max-height:35%;
+  float: right;
+}
+
+
+.rngcontainer {
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.text {
+  font-size: 20px;
+  padding-left: 200px;
+  float: left;
+  color: #69472f;
+}
+
+/* style for video*/
+
+.center-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+
+}
+
+
+/* contact us style*/
+
+.cnctcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #D2B48C;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cnctcontainer h1 {
+  grid-column: 1 / span 2;
+  color: #333;
+  text-align: left;
+}
+
+.left-column {
+  grid-column: 1 / span 1;
+}
+
+.cnctcontainer p {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #555;
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: #8B4513;
+}
+
+.cnctcontainer label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.cnctcontainer input[type="text"],
+.cnctcontainer textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.right-column {
+  grid-column: 2 / span 1;
+}
+
+.cnctcontainer button {
+  background-color: #FFF8DC;
+  color: #69472f;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.cnctcontainer button:hover {
+  background-color:#8B4513;
+  color: #FFF8DC;
+}
+
+.cnctcontainer input, textarea, button {
+  font-family: "Montserrat Medium";
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin-top: 4rem;
+  margin-left: 20rem;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box11,
+.box111 {
+  border: 2px solid black;
+  padding: 10px;
+  width: 60rem;
+  height: 28rem;
+  margin: 10px;
+  text-align: center;
+}
+
+.box11 img,
+.box111 img {
+  display: block;
+  margin: 0 auto;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+iframe {
+  width: 40%;
+  height: 50%;
+  border: 0;
+  margin-left: 25rem;
+}
